@@ -1,4 +1,4 @@
-"""Module documentation goes here."""
+"""This file is just to play with fastAPI"""
 
 from fastapi import FastAPI
 
@@ -10,3 +10,4 @@ app = FastAPI()
 @app.get("/")
 def home():
     return {"Data": "Hello World !"}
+
