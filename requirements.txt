@@ -1,0 +1,11 @@
+coverage==6.3
+logzero==1.7.0
+pycodestyle==2.8.0
+pyflakes==2.4.0
+pylint==2.12.2
+flake8==4.0.1
+python-coveralls==2.9.3
+fastapi==0.73.0
+uvicorn
+pytest
+autopep8
