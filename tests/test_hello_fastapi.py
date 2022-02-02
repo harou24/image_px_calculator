@@ -10,6 +10,11 @@ class TestHelloFastApi(unittest.TestCase):
         assert response.status_code == 200
         assert response.json() == {"Data" : "Hello World !"}
 
+    def test_get_size(self):
+        response = client.get("/getsize")
+        assert response.status_code == 200
+        assert response.json() == {"Size" : 660000}
+
 
 if __name__ == '__main__':
     unittest.main()
