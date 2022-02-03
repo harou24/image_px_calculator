@@ -20,6 +20,7 @@ help: ## Print help for each target
 run: ## Run the code
 	@$(PYTHON) $(SRC_CORE)/hello.py -f -n Foo test
 	@$(PYTHON) $(SRC_CORE)/hello_fastapi.py
+	@$(PYTHON) $(SRC_CORE)/img_px_calculator.py
 
 test: ## Test the code
 	@type coverage >/dev/null 2>&1 || (echo "Run '$(PIP) install coverage' first." >&2 ; exit 1)
