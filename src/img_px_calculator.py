@@ -2,8 +2,8 @@ import cv2
 import urllib.request
 import numpy as np
 
-def get_nb_px_in_img_from_path(imageUrl):
-    img = cv2.imread(imageUrl)
+def get_nb_px_in_img_from_path(path):
+    img = cv2.imread(path)
     dim = img.shape
     return dim[0]*dim[1]
 
