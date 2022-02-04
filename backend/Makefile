@@ -4,8 +4,6 @@ SRC_RESOURCES=resources
 PYTHON=python3
 PYDOC=pydoc3
 PIP=pip3
-FILES=$(SRC_CORE)/hello.py\
-	$(SRC_CORE)/hello_fastapi
 
 
 help: ## Print help for each target
@@ -18,7 +16,6 @@ help: ## Print help for each target
 		| sort | awk 'BEGIN {FS=":.* ## "}; {printf "%-25s %s\n", $$1, $$2};'
 
 run: ## Run the code
-	@$(PYTHON) $(SRC_CORE)/hello.py -f -n Foo test
 	@$(PYTHON) $(SRC_CORE)/hello_fastapi.py
 	@$(PYTHON) $(SRC_CORE)/img_px_calculator.py
 

@@ -2,12 +2,12 @@ import cv2
 import urllib.request
 import numpy as np
 
-def get_nb_px_in_img_from_path(path):
+def getImgDimFromPath(path):
     img = cv2.imread(path)
     dim = img.shape
     return dim[0]*dim[1]
 
-def get_nb_px_in_img_from_url(url):
+def getImgDimFromUrl(url):
     try:
         res = urllib.request.urlopen(url)
     except urllib.error.HTTPError as e:
