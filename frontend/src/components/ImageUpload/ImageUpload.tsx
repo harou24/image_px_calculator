@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { postData } from '../../API/API';
 import { Button } from '../Button/index.ts';
 import { File, Image } from '../../Types';
@@ -17,7 +17,7 @@ const ImageUpload = () => {
         console.log("RESPONSE->", response)
         console.log("FORMDATA->", data)
         setImage(response)
-        
+        if (image) console.log("PAH->",image.path)
     }
     return (
         <div>
@@ -26,7 +26,7 @@ const ImageUpload = () => {
                 placeholder="Upload an image"
                 onChange={(e)=>{uploadImage(e)}}
             />
-            {loading ? "Loading..." : <Img src={image} alt="image"/>}
+            {image && image.path ? <Img src={image.path} alt="image"/> : "Loading..."}
             <h1>{image && image.size ? "The original size of the image is : " + image.size + " pixels." : ""}</h1>
         </div>
     );
