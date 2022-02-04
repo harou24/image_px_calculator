@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const TextInput = styled.input`
+	max-height: 200px;
+	min-width: 40vw;
 	color: white;
 	background: black;
 	width: 100%;
@@ -8,13 +10,12 @@ export const TextInput = styled.input`
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	box-sizing: border-box;
-	resize: vertical;
-	caret-color: #fff;
 
 	::placeholder {
 		color: #fff;
 		font-size: 14px;
 	}
+
 	&:focus {
 		color: #fff;
 		border: 1px solid #3f3fff;
