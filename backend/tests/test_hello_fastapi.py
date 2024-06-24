@@ -21,6 +21,5 @@ class TestHelloFastApi(unittest.TestCase):
         assert response.status_code == 200
         assert response.json() == {"size" : 660000}
 
-
 if __name__ == '__main__':
     unittest.main()

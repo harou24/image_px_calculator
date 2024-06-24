@@ -1,25 +1,18 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-    text-align: center;
-    display: inline-block;
-    padding: 10px 10px;
-    color:  #E1E8F0;
-    background-color: #1F5899;
-    border: 2px solid #e0984c;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-    transition: .3s ease;
-    transition-property: background-color, color;
-    cursor: pointer;
-    border-radius: 30%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	background-color: #3f3fff;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 
-:hover
-{
-    color: #E1E8F0;
-    cursor: pointer;
-    background: #8FC5FC;
-}
+	&:hover {
+		background-color: #abc;
+	}
 `
